@@ -1,3 +1,4 @@
+#pragma once
 #ifndef T_STRING
 #define T_STRING
 
@@ -12,12 +13,12 @@ typedef char *string;
 #include <stddef.h>
 #include <stdio.h>
 
-#include "dijkstra.h"
-#include "pagerank.h"
-
 #define MEMORY_ALLOC_ERROR "Failed to allocate memory..."
 
 typedef struct Graph_Repr *graph;
+
+#include "dijkstra.h"
+#include "pagerank.h"
 
 // meta interface
 /**

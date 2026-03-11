@@ -23,6 +23,8 @@
 
 ## :dart: About ##
 
+Note: This is a fork of the original graph-visualizer tool by nicolunardi.
+
 Graph Visualizer is a library written entirely in C that allows for the creating of graphs using adjacency lists. Once the graphs are created, you can add/remove/edit vertices (weighted or not) as well as edges. The adjacency list representation of the graph can then be printed out to a specified file.  
 
 The library also has functions to perform a simple Pagerank algorithm on the graph as well as calculate and display the shortest path using Dijkstra's algorithm
@@ -203,7 +205,10 @@ void graph_pagerank(graph G, double damping, double delta);
 
 // Display all vertices in order of pagerank
 void graph_viewrank(graph G, FILE *file);
-```
+
+Example: View `new-graph.c`
+
+Note: `#pragma once` and `.clangd` config is used here to avoid the 'pp_including_mainfile_in_preamble' error/warning. 
 
 ## :memo: License ##
 
