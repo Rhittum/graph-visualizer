@@ -206,6 +206,8 @@ void graph_pagerank(graph G, double damping, double delta);
 // Display all vertices in order of pagerank
 void graph_viewrank(graph G, FILE *file);
 
+```
+
 Example: View `new-graph.c`
 
 Note: `#pragma once` and `.clangd` config is used here to avoid the 'pp_including_mainfile_in_preamble' error/warning. 
